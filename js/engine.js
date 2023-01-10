@@ -142,7 +142,7 @@ let power = false;
 $("lose").volume = 1;
 $("plus").volume = 1;
 $("uwu").volume = 1;
-$("ambient").volume = 0.8;
+$("ambient").volume = 0.5;
 $("hyperjump").volume = 1;
 
 function setup(){
