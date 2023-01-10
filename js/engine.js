@@ -139,11 +139,11 @@ let powerCount = 0;
 let powerColor = 0;
 let power = false;
 
-$("lose").volume = 0.1;
-$("plus").volume = 0.1;
-$("uwu").volume = 0.1;
-$("ambient").volume = 0.01;
-$("hyperjump").volume = 0.05;
+$("lose").volume = 0.5;
+$("plus").volume = 0.5;
+$("uwu").volume = 0.5;
+$("ambient").volume = 0.4;
+$("hyperjump").volume = 0.5;
 
 function setup(){
   var canvas = createCanvas(700,500);
