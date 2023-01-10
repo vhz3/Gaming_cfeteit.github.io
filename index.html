@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+    <script src="js/character.js"></script>
+    <script src="js/obstacles.js"></script>
+    <script src="js/hashtable.js"></script>
+    <script src="js/zone.js"></script>
+  </head>
+  <body>
+    <div id="sounds">
+      <audio id="uwu" src="sound/uwu.mp3"></audio>
+      <audio id="plus" src="sound/plus.mp3"></audio>
+      <audio id="lose" src="sound/lose.mp3"></audio>
+      <audio id="ambient" src="sound/ambient.mp3"></audio>
+      <audio id="hyperjump" src="sound/hyperdrive.mp3"></audio>
+    </div>
+    <div id="in_out">
+      <a>START GAME</a>
+    </div>
+    <div id="game_window"></div>
+    <div id="score_window"></div>
+    <div id="power_bar"><div id="power_count"></div></div>
+    <div id="questions_window">
+      <div id="question"></div>
+      <div id="answers">
+        <div id="answer_button" class="true">True</div>
+        <div id="answer_button" class="false">False</div>
+      </div>
+    </div>
+
+    <script src="js/engine.js"></script>
+  </body>
+</html>
