@@ -139,14 +139,14 @@ let powerCount = 0;
 let powerColor = 0;
 let power = false;
 
-$("lose").volume = 0.5;
-$("plus").volume = 0.5;
-$("uwu").volume = 0.5;
-$("ambient").volume = 0.4;
-$("hyperjump").volume = 0.5;
+$("lose").volume = 1;
+$("plus").volume = 1;
+$("uwu").volume = 1;
+$("ambient").volume = 0.8;
+$("hyperjump").volume = 1;
 
 function setup(){
-  var canvas = createCanvas(700,500);
+  var canvas = createCanvas(800,600);
   canvas.parent("game_window");
   obs.push(new obstacle(random(10,width-10),random(10,height-10),Math.floor(random(5,15))));
   player = new chronos(width/2,height/2,20);
@@ -184,7 +184,7 @@ function addBonusZone(){
   bonus.display(color(180),75);
 }
 
-setInterval(addNewObstacle,10);
+setInterval(addNewObstacle,5000);
 function addNewObstacle(){
   // new_Obs.play();
   if(!stop && $("in_out").classList.contains("active")){
@@ -192,7 +192,7 @@ function addNewObstacle(){
   }
 }
 
-setInterval(updateBonusPosition,10);
+setInterval(updateBonusPosition,10000);
 function updateBonusPosition(){
    bonus.setPosition(random(100,width-100),random(100,height-100));
 }
