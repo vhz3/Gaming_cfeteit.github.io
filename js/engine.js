@@ -184,7 +184,7 @@ function addBonusZone(){
   bonus.display(color(180),75);
 }
 
-setInterval(addNewObstacle,500);
+setInterval(addNewObstacle,10);
 function addNewObstacle(){
   // new_Obs.play();
   if(!stop && $("in_out").classList.contains("active")){
@@ -192,7 +192,7 @@ function addNewObstacle(){
   }
 }
 
-setInterval(updateBonusPosition,10000);
+setInterval(updateBonusPosition,10);
 function updateBonusPosition(){
    bonus.setPosition(random(100,width-100),random(100,height-100));
 }
