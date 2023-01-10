@@ -3,12 +3,12 @@ html , body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    /* font-family: 'Trench', sans-serif; */
+    font-family: 'Trench', sans-serif;
 }
 
-/* @font-face { font-family: 'Trench';
+@font-face { font-family: 'Trench';
     src: url('/trench.ttf');
- } */
+ }
 
 #sounds{
     visibility: hidden;
