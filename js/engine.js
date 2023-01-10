@@ -49,7 +49,7 @@ questionsHashtable.putQuestion(11, "El logo de Java es un taza de té.", false);
 questionsHashtable.putQuestion(12, "En enero del 2010, Sun Microsystems adquirió Oracle y todo su software, incluyendo Java Programming Languaje." , false );
 questionsHashtable.putQuestion(13, "Gitlab fue creado por Linus Torvalds en 2011.", false);
 questionsHashtable.putQuestion(14, "Un hypervínculo es una conexión directa entre dos espacios virtuales en el mundo digital.", true);
-questionsHashtable.putQuestion(15, "Pie pequeño tenía los pies pequeños." ,);
+questionsHashtable.putQuestion(15, "Javascript es un lenguaje compilado." , false);
 questionsHashtable.putQuestion(16, "Las etiquetas HTML le dan formato y estructura al contenido de las paginas web." , true);
 questionsHashtable.putQuestion(17, "Es posible utilizar variables en CSS.", true);
 questionsHashtable.putQuestion(18, "Integer es un objeto y no un dato primitivo.", true);
