@@ -1,2 +1,2 @@
-# Gaming_cfeteit.github.io
+# Gaming
 //Juego creado para actividad de integración.
