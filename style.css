@@ -103,8 +103,8 @@ canvas {
 }
 
 #questions_window.active {
-    width: 700px;
-    height: 500px;
+    width: 800px;
+    height: 600px;
     position: absolute;
     top:5%;
     bottom: 0;
