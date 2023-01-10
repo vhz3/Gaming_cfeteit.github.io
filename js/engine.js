@@ -1,28 +1,28 @@
-// document.addEventListener('visibilitychange', function (event) {
-//   if (document.hidden && !$("in_out").classList.contains("game_over")) {
-//     $("lose").play();
-//     $("in_out").children[0].innerHTML = "!GAME OVER! <br>" + "Score: " + Math.floor(score);
-//     $("in_out").classList.toggle("active");
-//     $("in_out").classList.add("game_over");
-//     $("questions_window").classList.remove("active");
-//     stop = true;
-//     lock = false;
-//     restartGame();
-//   }
-// });
+document.addEventListener('visibilitychange', function (event) {
+  if (document.hidden && !$("in_out").classList.contains("game_over")) {
+    $("lose").play();
+    $("in_out").children[0].innerHTML = "!GAME OVER! <br>" + "Score: " + Math.floor(score);
+    $("in_out").classList.toggle("active");
+    $("in_out").classList.add("game_over");
+    $("questions_window").classList.remove("active");
+    stop = true;
+    lock = false;
+    restartGame();
+  }
+});
 
-// window.addEventListener('blur', function (event) {
-//   if(!$("in_out").classList.contains("game_over")) {
-//     $("lose").play();
-//     $("in_out").children[0].innerHTML = "!GAME OVER! <br>" + "Score: " + Math.floor(score);
-//     $("in_out").classList.toggle("active");
-//     $("in_out").classList.add("game_over");
-//     $("questions_window").classList.remove("active");
-//     stop = true;
-//     lock = false;
-//     restartGame();
-//   }
-// });
+window.addEventListener('blur', function (event) {
+  if(!$("in_out").classList.contains("game_over")) {
+    $("lose").play();
+    $("in_out").children[0].innerHTML = "!GAME OVER! <br>" + "Score: " + Math.floor(score);
+    $("in_out").classList.toggle("active");
+    $("in_out").classList.add("game_over");
+    $("questions_window").classList.remove("active");
+    stop = true;
+    lock = false;
+    restartGame();
+  }
+});
 
 function $(name){
   return document.getElementById(name);
