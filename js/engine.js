@@ -73,8 +73,8 @@ questionsHashtable.putQuestion(49, "En bash 'ls' sirve para visualizar los archi
 questionsHashtable.putQuestion(50, "En java 'Public' es un modificador utilizado para definir el nivel de acceso en un programa.", true);
 questionsHashtable.putQuestion(51, "En java 'Static' es una palabra reservada que permite la modificación de sus elementos en tiempos de ejecución.", false);           
 questionsHashtable.putQuestion(52, "En java 'extends' sirve para heredar las propiedades de una clase.", true);
-questionsHashtable.putQuestion(53, "En javascript 'console.log([] == false) - imprime un error'", false);
-questionsHashtable.putQuestion(54, "En javascript 'console.log( ( 0.1 + 0.2 ) == 0.3 ) // imprime falso'", true);                              
+questionsHashtable.putQuestion(53, "En javascript 'console.log([] == false)' - imprime un error", false);
+questionsHashtable.putQuestion(54, "En javascript 'console.log( ( 0.1 + 0.2 ) == 0.3 )' // imprime falso", true);                              
 questionsHashtable.putQuestion(55, "En html '<ol> <li><li> </ol>' crea una lista desordenada.", false);
 questionsHashtable.putQuestion(56, "BBVA > BBienestar.", true);                               
 questionsHashtable.putQuestion(57, "Albert Einstein dijo que la cuarta guerra mundial se lucharía con piedras.", true);                               
