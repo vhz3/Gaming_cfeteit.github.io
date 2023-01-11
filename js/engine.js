@@ -1,6 +1,6 @@
 // document.addEventListener('visibilitychange', function (event) {
 //   if (document.hidden && !$("in_out").classList.contains("game_over")) {
-//     youLose();
+// youLose();
 //   }
 // });
 
@@ -87,7 +87,6 @@ questionsHashtable.putQuestion(63, "Amar te duele fue grabada en Iztapalapa.", f
 questionsHashtable.putQuestion(64, "Amores perros se estreno en el año 2000.", true);
 questionsHashtable.putQuestion(65, "La persona más longeva registrada vivió 122 años y 164 días.", true);
 questionsHashtable.putQuestion(66, "La persona más peuqeña de la historia medía 54,6cm.", true);
-                               
 
 $("in_out").children[0].addEventListener('click', (e) => {
   if($("in_out").classList.contains("game_over")){
@@ -135,7 +134,7 @@ function validateAnswer(correct_answer){
       $("uwu").play();
       $("ambient").play();
       $("questions_window").classList.remove("active");
-      $("timer_window").classList.remove("active");
+      $("timer_window").classList.remove("active"); 
       switchToRespondTimer = false;
       stop = false;
       lock = false;
@@ -159,15 +158,15 @@ let power = false;
 let timeToRespond = 10;
 let switchToRespondTimer = false;
 
-$("lose").volume = 1;
-$("plus").volume = 1;
-$("uwu").volume = 1;
-$("ambient").volume = 0.2;
-$("hyperjump").volume = 1;
+$("lose").volume = 0.1;
+$("plus").volume = 0.1;
+$("uwu").volume = 0.1;
+$("ambient").volume = 0.01;
+$("hyperjump").volume = 0.05;
 $("clock").volume = 0.5;
 
 function setup(){
-  var canvas = createCanvas(800,600);
+  var canvas = createCanvas(700,500);
   canvas.parent("game_window");
   obs.push(new obstacle(random(10,width-10),random(10,height-10),Math.floor(random(5,15))));
   player = new chronos(width/2,height/2,20);
@@ -205,7 +204,7 @@ function addBonusZone(){
   bonus.display(color(180),75);
 }
 
-setInterval(addNewObstacle,4000);
+setInterval(addNewObstacle,3500);
 function addNewObstacle(){
   // new_Obs.play();
   if(!stop && $("in_out").classList.contains("active")){
@@ -247,7 +246,7 @@ function checkCollision(question){
           stop = true;
           timeToRespond = 11; 
           switchToRespondTimer = true;
-          $("timer_window").classList.add("active");   
+          $("timer_window").classList.add("active");       
       }
   }
 }
@@ -267,7 +266,7 @@ setInterval(()=>{
         $("clock").play();
       }
     } 
-    console.log(timeToRespond);
+  
     $("timer_window").children[0].innerHTML = timeToRespond;
   }
 },1000);

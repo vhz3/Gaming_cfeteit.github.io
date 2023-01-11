@@ -3,12 +3,12 @@ html , body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    font-family: 'Trench', sans-serif;
+    /* font-family: 'Trench', sans-serif; */
 }
 
-@font-face { font-family: 'Trench';
+/* @font-face { font-family: 'Trench';
     src: url('/trench.ttf');
- }
+ } */
 
 #sounds{
     visibility: hidden;
@@ -28,8 +28,8 @@ canvas {
 }
 
 #game_window {
-    width: 800px;
-    height: 600px;
+    width: 700px;
+    height: 500px;
     position: absolute;
     background-color: antiquewhite;
     top:5%;
@@ -43,6 +43,7 @@ canvas {
 }
 
 #score_window {
+    position: absolute;
     height: 70px;
     width: 200px;
     border-radius: 10px;
@@ -160,8 +161,8 @@ canvas {
 }
 
 #questions_window.active {
-    width: 800px;
-    height: 600px;
+    width: 700px;
+    height: 500px;
     position: absolute;
     top:5%;
     bottom: 0;
