@@ -155,7 +155,7 @@ let stop = false;
 let powerCount = 0;
 let powerColor = 0;
 let power = false;
-let timeToRespond = 10;
+let timeToRespond = 5;
 let switchToRespondTimer = false;
 
 $("lose").volume = 0.1;
@@ -244,7 +244,7 @@ function checkCollision(question){
           $("question").innerHTML = questionsHashtable.getQuestion(randomID);
           $("questions_window").classList.toggle('active');
           stop = true;
-          timeToRespond = 11; 
+          timeToRespond = 6; 
           switchToRespondTimer = true;
           $("timer_window").classList.add("active");       
       }
