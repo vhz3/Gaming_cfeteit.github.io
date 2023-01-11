@@ -1,8 +1,8 @@
-// document.addEventListener('visibilitychange', function (event) {
-//   if (document.hidden && !$("in_out").classList.contains("game_over")) {
-// youLose();
-//   }
-// });
+document.addEventListener('visibilitychange', function (event) {
+  if (document.hidden && !$("in_out").classList.contains("game_over")) {
+youLose();
+  }
+});
 
 // window.addEventListener('blur', function (event) {
 //   if(!$("in_out").classList.contains("game_over")) {
