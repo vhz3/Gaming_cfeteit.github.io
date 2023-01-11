@@ -75,8 +75,8 @@ questionsHashtable.putQuestion(51, "En java 'Static' es una palabra reservada qu
 questionsHashtable.putQuestion(52, "En java 'extends' sirve para heredar las propiedades de una clase.", true);
 questionsHashtable.putQuestion(53, "En javascript 'console.log([] == false)' - imprime un error", false);
 questionsHashtable.putQuestion(54, "En javascript 'console.log( ( 0.1 + 0.2 ) == 0.3 )' // imprime falso", true);                              
-questionsHashtable.putQuestion(55, "En html ''<ol>' '<li><li>' '</ol>'' crea una lista desordenada.", false);
-questionsHashtable.putQuestion(56, "BBVA > BBienestar.", true);                               
+questionsHashtable.putQuestion(55, "En html form crea una lista desordenada.", false);
+questionsHashtable.putQuestion(56, "BBVA es mejor que BBienestar.", true);                               
 questionsHashtable.putQuestion(57, "Albert Einstein dijo que la cuarta guerra mundial se lucharía con piedras.", true);                               
 questionsHashtable.putQuestion(58, "El nitrógeno es el elemento químico más abundante en la atmósfera.", true);                               
 questionsHashtable.putQuestion(59, "Marie Curie falleció de leucemia a causa de su contacto con sustancias radioactivas.", true);                               
@@ -155,7 +155,7 @@ let stop = false;
 let powerCount = 0;
 let powerColor = 0;
 let power = false;
-let timeToRespond = 5;
+let timeToRespond = 7;
 let switchToRespondTimer = false;
 
 $("lose").volume = 0.1;
@@ -244,7 +244,7 @@ function checkCollision(question){
           $("question").innerHTML = questionsHashtable.getQuestion(randomID);
           $("questions_window").classList.toggle('active');
           stop = true;
-          timeToRespond = 6; 
+          timeToRespond = 8; 
           switchToRespondTimer = true;
           $("timer_window").classList.add("active");       
       }
