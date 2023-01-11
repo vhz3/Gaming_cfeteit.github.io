@@ -65,7 +65,44 @@ questionsHashtable.putQuestion(27, "Vicente Guerrero fué el primer presidente d
 questionsHashtable.putQuestion(28, "Alexander Fleming descubrió la penicilina.", true);
 questionsHashtable.putQuestion(29, "La única letra que no está en la tabla periódica es la letra J.", true);
 questionsHashtable.putQuestion(30, "Si multiplicamos 111111111 x 111111111 el resultado es 12345678987654321", true);
-questionsHashtable.putQuestion(31, "Kamehameha era el nombre del rey de la isla hawaiiana.", true)
+questionsHashtable.putQuestion(31, "Kamehameha era el nombre del rey de la isla hawaiiana.", true);
+questionsHashtable.putQuestion(32, "La construcción de la torre Eiffel se completó el 31 de marzo de 1887.", false);
+questionsHashtable.putQuestion(33, "Los relámpagos se ven antes de escucharse porque la luz viaja más rápido que el dinero." , false);
+questionsHashtable.putQuestion(34, "El cráneo es el hueso más fuerte del cuerpo humano", false);                              
+questionsHashtable.putQuestion(35, "Google inicialmente se llamaba BackRub.", true);
+questionsHashtable.putQuestion(36, "Java inicialmente se llamaba Oak.", true);                               
+questionsHashtable.putQuestion(37, "Si sumas los dos números en los lados opuestos de los dados, la respuesta siempre es 7.", true);                               
+questionsHashtable.putQuestion(38, "Un pollo puede vivir sin cabeza mucho tiempo después de ser cortado.", true);                               
+questionsHashtable.putQuestion(39, "El polimorfismo permite diseñar objetos para compartir comportamientos.", true);                               
+questionsHashtable.putQuestion(40, "Jovenes construyendo el futuro nació por el exceso de jovenes competentes.", true);
+questionsHashtable.putQuestion(41, "JSON significa Javascript Object Number.", false);       
+questionsHashtable.putQuestion(42, "En javascript 'charAt()' te devuelve una cadena de texto invertida.", false);
+questionsHashtable.putQuestion(43, "En javascript 'indexOf()' retorna el índice de la primera ocurrencia del valor dentro de un objeto String.", true);
+questionsHashtable.putQuestion(44, "En javascript 'trim()' remueve los espacios en blanco al principio y al final de una string.", true);                              
+questionsHashtable.putQuestion(45, "En javascript 'filter()' crea un nuevo array con los elementos que pasen el test de una función.", true);
+questionsHashtable.putQuestion(46, "En git 'git pull' sirve para hacer merge de todos los cambios presentes en el repositorio remoto con el repositorio local.", true);                               
+questionsHashtable.putQuestion(47, "En bash 'touch' sirve para crear nuevos archivos.", true);                               
+questionsHashtable.putQuestion(48, "En bash 'mkdir' sirve para crear nuevos directorios.", true);                               
+questionsHashtable.putQuestion(49, "En bash 'ls' sirve para visualizar los archivos en un directorio en especifico.", true);                               
+questionsHashtable.putQuestion(50, "En java 'Public' es un modificador utilizado para definir el nivel de acceso en un programa.", true);
+questionsHashtable.putQuestion(51, "En java 'Static' es una palabra reservada que permite la modificación de sus elementos en tiempos de ejecución.", false);           
+questionsHashtable.putQuestion(52, "En java 'extends' sirve para heredar las propiedades de una clase.", true);
+questionsHashtable.putQuestion(53, "En javascript 'console.log([] == false) - imprime un error'", false);
+questionsHashtable.putQuestion(54, "En javascript 'console.log( ( 0.1 + 0.2 ) == 0.3 ) // imprime falso'", true);                              
+questionsHashtable.putQuestion(55, "En html '<ol> <li><li> </ol>' crea una lista desordenada.", false);
+questionsHashtable.putQuestion(56, "BBVA > BBienestar.", true);                               
+questionsHashtable.putQuestion(57, "Albert Einstein dijo que la cuarta guerra mundial se lucharía con piedras.", true);                               
+questionsHashtable.putQuestion(58, "El nitrógeno es el elemento químico más abundante en la atmósfera.", true);                               
+questionsHashtable.putQuestion(59, "Marie Curie falleció de leucemia a causa de su contacto con sustancias radioactivas.", true);                               
+questionsHashtable.putQuestion(60, "Titanic, Ben Hur y El Señor de los Anillos, el retorno del rey, son las películas con más Oscar de la historia.", true);
+questionsHashtable.putQuestion(61, "La montaña sagrada (1973) es una pelicula de Alejandro Jodorowsky.", true);
+questionsHashtable.putQuestion(62, "El cineasta Pedro Almodóvar es de origen chileno.", false);
+questionsHashtable.putQuestion(63, "Amar te duele fue grabada en Iztapalapa.", false);
+questionsHashtable.putQuestion(64, "Amores perros se estreno en el año 2000.", true);
+questionsHashtable.putQuestion(65, "La persona más longeva registrada vivió 122 años y 164 días.", true);
+questionsHashtable.putQuestion(66, "La persona más peuqeña de la historia medía 54,6cm.", true);
+                               
+
 $("in_out").children[0].addEventListener('click', (e) => {
   if($("in_out").classList.contains("game_over")){
     stop = false;
