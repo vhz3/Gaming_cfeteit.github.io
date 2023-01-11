@@ -75,7 +75,7 @@ questionsHashtable.putQuestion(51, "En java 'Static' es una palabra reservada qu
 questionsHashtable.putQuestion(52, "En java 'extends' sirve para heredar las propiedades de una clase.", true);
 questionsHashtable.putQuestion(53, "En javascript 'console.log([] == false)' - imprime un error", false);
 questionsHashtable.putQuestion(54, "En javascript 'console.log( ( 0.1 + 0.2 ) == 0.3 )' // imprime falso", true);                              
-questionsHashtable.putQuestion(55, "En html '<ol> <li><li> </ol>' crea una lista desordenada.", false);
+questionsHashtable.putQuestion(55, "En html ''<ol>' '<li><li>' '</ol>'' crea una lista desordenada.", false);
 questionsHashtable.putQuestion(56, "BBVA > BBienestar.", true);                               
 questionsHashtable.putQuestion(57, "Albert Einstein dijo que la cuarta guerra mundial se lucharía con piedras.", true);                               
 questionsHashtable.putQuestion(58, "El nitrógeno es el elemento químico más abundante en la atmósfera.", true);                               
