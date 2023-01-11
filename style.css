@@ -101,6 +101,7 @@ canvas {
     border-radius: 10px;
     color: white;
     text-align: center;
+    user-select: none;
 }
 
 #winError{
