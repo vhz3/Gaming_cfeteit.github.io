@@ -158,12 +158,12 @@ let power = false;
 let timeToRespond = 7;
 let switchToRespondTimer = false;
 
-$("lose").volume = 0.1;
-$("plus").volume = 0.1;
-$("uwu").volume = 0.1;
-$("ambient").volume = 0.01;
-$("hyperjump").volume = 0.05;
-$("clock").volume = 0.5;
+$("lose").volume = 1;
+$("plus").volume = 1;
+$("uwu").volume = 1;
+$("ambient").volume = 0.4;
+$("hyperjump").volume = 1;
+$("clock").volume = 0.7;
 
 function setup(){
   var canvas = createCanvas(700,500);
