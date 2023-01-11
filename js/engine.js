@@ -30,7 +30,7 @@ questionsHashtable.putQuestion(8, "En un byte hay 8 bits.", true);
 questionsHashtable.putQuestion(9, "Es posible descargar memoria ram desde la Microsoft Store.", false);
 questionsHashtable.putQuestion(10, "El lenguaje Java fue desarrollado en sus inicios por Ryan Gosling, en el año 1991.", false);
 questionsHashtable.putQuestion(11, "El logo de Java es un taza de té.", false);
-questionsHashtable.putQuestion(12, "En enero del 2010, Sun Microsystems adquirió Oracle y todo su software, incluyendo Java Programming Languaje." , false );
+questionsHashtable.putQuestion(12, "En enero del 2010, Sun Microsystems adquirió Oracle y todo su software, incluyendo Java Programming Languajge." , false );
 questionsHashtable.putQuestion(13, "Gitlab fue creado por Linus Torvalds en 2011.", false);
 questionsHashtable.putQuestion(14, "Un hypervínculo es una conexión directa entre dos espacios virtuales en el mundo digital.", true);
 questionsHashtable.putQuestion(15, "Javascript es un lenguaje compilado." , false);
