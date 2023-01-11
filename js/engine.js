@@ -1,26 +1,12 @@
 document.addEventListener('visibilitychange', function (event) {
   if (document.hidden && !$("in_out").classList.contains("game_over")) {
-    $("lose").play();
-    $("in_out").children[0].innerHTML = "!GAME OVER! <br>" + "Score: " + Math.floor(score);
-    $("in_out").classList.toggle("active");
-    $("in_out").classList.add("game_over");
-    $("questions_window").classList.remove("active");
-    stop = true;
-    lock = false;
-    restartGame();
+    youLose();
   }
 });
 
 window.addEventListener('blur', function (event) {
   if(!$("in_out").classList.contains("game_over")) {
-    $("lose").play();
-    $("in_out").children[0].innerHTML = "!GAME OVER! <br>" + "Score: " + Math.floor(score);
-    $("in_out").classList.toggle("active");
-    $("in_out").classList.add("game_over");
-    $("questions_window").classList.remove("active");
-    stop = true;
-    lock = false;
-    restartGame();
+    youLose();
   }
 });
 
@@ -149,18 +135,13 @@ function validateAnswer(correct_answer){
       $("uwu").play();
       $("ambient").play();
       $("questions_window").classList.remove("active");
+      $("timer_window").classList.remove("active");
+      switchToRespondTimer = false;
       stop = false;
       lock = false;
       loop();
     }else{
-      $("lose").play();
-      $("in_out").children[0].innerHTML = "!GAME OVER! <br>" + "Score: " + Math.floor(score);
-      $("in_out").classList.toggle("active");
-      $("in_out").classList.add("game_over");
-      $("questions_window").classList.toggle("active");
-      stop = true;
-      lock = false;
-      restartGame();
+      youLose();
     }
 }
 
@@ -175,12 +156,15 @@ let stop = false;
 let powerCount = 0;
 let powerColor = 0;
 let power = false;
+let timeToRespond = 10;
+let switchToRespondTimer = false;
 
 $("lose").volume = 1;
 $("plus").volume = 1;
 $("uwu").volume = 1;
-$("ambient").volume = 0.5;
+$("ambient").volume = 0.2;
 $("hyperjump").volume = 1;
+$("clock").volume = 0.5;
 
 function setup(){
   var canvas = createCanvas(800,600);
@@ -221,7 +205,7 @@ function addBonusZone(){
   bonus.display(color(180),75);
 }
 
-setInterval(addNewObstacle,5000);
+setInterval(addNewObstacle,4000);
 function addNewObstacle(){
   // new_Obs.play();
   if(!stop && $("in_out").classList.contains("active")){
@@ -261,9 +245,33 @@ function checkCollision(question){
           $("question").innerHTML = questionsHashtable.getQuestion(randomID);
           $("questions_window").classList.toggle('active');
           stop = true;
+          timeToRespond = 11; 
+          switchToRespondTimer = true;
+          $("timer_window").classList.add("active");   
       }
   }
 }
+
+setInterval(()=>{
+  if(switchToRespondTimer){
+    if(timeToRespond != 0){
+      timeToRespond -= 1;
+      if(timeToRespond == 0){
+        $("winError").classList.add("active");
+        $("clockEnd").play();
+        setTimeout(() => {
+          youLose();
+          $("winError").classList.remove("active");
+        }, 2000);
+      }else{
+        $("clock").play();
+      }
+    } 
+  
+    $("timer_window").children[0].innerHTML = timeToRespond;
+  }
+},1000);
+
 
 function onStop(){
   if(stop){
@@ -283,6 +291,19 @@ function restartGame(){
   $("power_count").style.height = "0%";
   power = false;
   loop();
+}
+
+function youLose(){
+  $("lose").play();
+  $("in_out").children[0].innerHTML = "!GAME OVER! <br>" + "Score: " + Math.floor(score);
+  $("in_out").classList.toggle("active");
+  $("in_out").classList.add("game_over");
+  $("questions_window").classList.remove("active");
+  $("timer_window").classList.remove("active"); 
+  switchToRespondTimer = false;
+  stop = true;
+  lock = false;
+  restartGame();
 }
 
 window.addEventListener('keydown', (e)=>{
