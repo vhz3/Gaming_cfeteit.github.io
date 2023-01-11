@@ -1,8 +1,8 @@
-document.addEventListener('visibilitychange', function (event) {
-  if (document.hidden && !$("in_out").classList.contains("game_over")) {
-youLose();
-  }
-});
+// document.addEventListener('visibilitychange', function (event) {
+//   if (document.hidden && !$("in_out").classList.contains("game_over")) {
+// youLose();
+//   }
+// });
 
 // window.addEventListener('blur', function (event) {
 //   if(!$("in_out").classList.contains("game_over")) {
@@ -23,6 +23,8 @@ const False_Button = document.querySelector(".false");
 questionsHashtable.putQuestion(0, "El intestino delgado mide unas tres veces y media la longitud de tu cuerpo.",true);
 questionsHashtable.putQuestion(1, "Los plátanos son curvos porque crecen hacia el sol.",true);
 questionsHashtable.putQuestion(2, "La caja negra de un avión es negra.",false);
+questionsHashtable.putQuestion(3, "git stash - te permite descargar los cambios del repositorio remoto.",false);
+questionsHashtable.putQuestion(4, "git grep - te permite buscar frases y palabaras especificas en los commits.", true);
 questionsHashtable.putQuestion(5, "El sistema binario, usado hoy para la programación de ordenadores, fue inventado hace más de 300 años por Gottfried W. Leibnitz.", true);
 questionsHashtable.putQuestion(6, "Las ramas hotfix derivan y se integran a la rama Master.", true);
 questionsHashtable.putQuestion(7, "Gitflow es un sistema de control de versiones.", false);
@@ -30,7 +32,7 @@ questionsHashtable.putQuestion(8, "En un byte hay 8 bits.", true);
 questionsHashtable.putQuestion(9, "Es posible descargar memoria ram desde la Microsoft Store.", false);
 questionsHashtable.putQuestion(10, "El lenguaje Java fue desarrollado en sus inicios por Ryan Gosling, en el año 1991.", false);
 questionsHashtable.putQuestion(11, "El logo de Java es un taza de té.", false);
-questionsHashtable.putQuestion(12, "En enero del 2010, Sun Microsystems adquirió Oracle y todo su software, incluyendo Java Programming Languajge." , false );
+questionsHashtable.putQuestion(12, "En enero del 2010, Sun Microsystems adquirió Oracle y todo su software, incluyendo Java Programming Languaje." , false );
 questionsHashtable.putQuestion(13, "Gitlab fue creado por Linus Torvalds en 2011.", false);
 questionsHashtable.putQuestion(14, "Un hypervínculo es una conexión directa entre dos espacios virtuales en el mundo digital.", true);
 questionsHashtable.putQuestion(15, "Javascript es un lenguaje compilado." , false);
